@@ -35,9 +35,10 @@ cp .env.example .env.local
 
 ```env
 VITE_API_BASE_URL=https://your-worker.example.workers.dev/api/stats
+VITE_AUTH_API_BASE_URL=https://your-auth-api.example.com/api/v1
 ```
 
-> **Note:** Cloudflare Pages や Vercel などにデプロイする場合は、ホスティング側の環境変数にも `VITE_API_BASE_URL` を設定してください。
+> **Note:** Cloudflare Pages や Vercel などにデプロイする場合は、ホスティング側の環境変数にも `VITE_API_BASE_URL` と `VITE_AUTH_API_BASE_URL` を設定してください。
 
 ### 3. 開発サーバーの起動
 
